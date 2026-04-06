@@ -92,7 +92,6 @@ Ready to chat with LexiAI? Here's how:
    - Say **"stop"** or **"exit"** to end the session.
 
 3. **Test It Out**:
-   - Run `python test.py` to check your Gemini API.
    - Use `s.py` for TTS tests if needed.
 
 Pro Tips:
