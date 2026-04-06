@@ -1,0 +1,44 @@
+# LexiAI Setup Guide - Step by Step
+
+## 1. Create a Virtual Environment
+- Open VS Code.
+- Press Ctrl+Shift+P (Command Palette).
+- Search for "Python: Create Environment".
+- Select "venv" (recommended) or "conda".
+- Choose your Python version and activate it.
+
+## 2. Install Required Packages
+Run these commands in your terminal (inside the activated virtual environment):
+
+```bash
+pip install speechrecognition pyaudio setuptools pyttsx3 google-generativeai requests pywhatkit python-dotenv
+pip install pipwin  # For Windows audio support
+pipwin install pyaudio
+```
+
+Note: If pyaudio installation fails, try:
+```bash
+pip install PyAudio
+```
+
+## 3. Set Up Environment Variables
+- Copy the `.env` file (or create one) and fill in your API keys:
+  - GEMINI_API_KEY: Get from Google AI Studio
+  - OPENWEATHER_API_KEY: Get from OpenWeatherMap
+  - NEWS_API_KEY: Get from NewsAPI
+  - GMAIL_EMAIL: Your Gmail address
+  - GMAIL_APP_PASSWORD: Gmail App Password (enable 2FA first)
+
+## 4. Customize and Run
+- Edit `contacts.py` and `contacts.json` for your contacts.
+- Add songs to `musiclibrary.py`.
+- Run the assistant: `python Main.py`
+- Say "Lexi" to start!
+
+## Troubleshooting
+- Ensure microphone permissions are enabled.
+- Check internet connection for APIs.
+- If TTS fails, try running as administrator (Windows).
+
+
+ 
